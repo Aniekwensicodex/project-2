@@ -30,8 +30,12 @@ const AboutMe = () => {
                     I also like sharing content related to the stuff that I have
                     learned over the years in <strong>Web Development</strong>{" "}
                     so it can help other people of the Dev Community Feel free
-                    to Connect or Follow me on my <a>Linkedin</a> where I post
-                    useful content related to Web Development and Programming.
+                    to Connect or Follow me on my{" "}
+                    <a href="https://www.linkedin.com/in/aniekwensi-chisom-419b93256/">
+                      Linkedin
+                    </a>{" "}
+                    where I post useful content related to Web Development and
+                    Programming.
                   </p>
                   {/* <br /> */}
                   <p className="about-details-para-2">

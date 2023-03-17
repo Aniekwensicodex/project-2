@@ -24,16 +24,16 @@ const Footer = () => {
                 <h2 className="social">Social</h2>
 
                 <div className="social-1">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/feed/">
                     <img src={linkedin} alt="linkedin" className="linkedin" />
                   </a>
-                  <a href="#">
+                  <a href="https://github.com/Aniekwensicodex">
                     <img src={github} alt="github" className="github" />
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/Chisom86011532">
                     <img src={twitter} alt="twitter" className="twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://wordpress.com/pages/kidknow.wordpress.com">
                     <img src={website} alt="website" className="website" />
                   </a>
                 </div>
@@ -41,7 +41,9 @@ const Footer = () => {
             </div>
             <div className="lower-footer">
               © Copyright 2023. Made by
-              <a href="#">Ani Chisom</a>
+              <a href="https://wordpress.com/pages/kidknow.wordpress.com">
+                Ani Chisom
+              </a>
             </div>
           </div>
         </div>
