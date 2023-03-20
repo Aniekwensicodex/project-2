@@ -1,136 +1,145 @@
-    /* NAVIGATION BAR */
-    
-    header {
-        width: 100%;
-        height: 90px;
-        z-index: 10;
-        /* color: rgba(3, 2, 0, 0.215); */
-    }
-    
-    .nav {
-        display: flex;
-        position: fixed;
-        top: 0;
-        justify-content: space-between;
-        align-items: center;
-        background: white !important;
-        box-shadow: 0px 3px 3px #333;
-        padding: 7px 20px;
-    }
-    
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
+
+
+/* NAVIGATION BAR */
+
+header {
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    /* color: rgba(3, 2, 0, 0.215); */
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: white !important;
+    box-shadow: 0px 3px 3px #333;
+    padding: 7px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar.navbar-nav.nav-link {
+    /* font-family: ; */
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 2.2rem 3rem;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 1.5rem;
+}
+
+.nav-list {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-list :hover {
+    color: #facf0f;
+    transition: 0.2s;
+}
+
+.navbar-brand {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1040px) {
     .nav-menu {
-        display: flex;
-        list-style: none;
-    }
-    
-    .navbar.navbar-nav.nav-link {
-        /* font-family: ; */
-        font-style: normal;
-        letter-spacing: 1px;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 2.2rem 3rem;
-        display: flex;
-        align-items: center;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        margin-left: 1.5rem;
-    }
-    
-    .nav-list {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-decoration: none;
-        font-weight: bolder;
-    }
-    
-    .nav-list :hover {
-        color: #facf0f;
-        transition: 0.2s;
-    }
-    
-    .navbar-brand {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: black;
-        font-weight: bolder;
-    }
-    
-    .hamburger {
-        display: none;
-    }
-    
-    @media screen and (max-width: 1040px) {
-        .nav-menu {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100vh;
-            background: #444;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            z-index: -3;
-            transition: 0.3s;
-        }
-        .nav-menu.active {
-            left: 0;
-        }
-        .nav-menu li {
-            padding: 1rem 0;
-        }
-        .nav-menu li a {
-            font-size: 2rem;
-        }
-        .hamburger {
-            display: initial;
-        }
-        .hamburger :hover {
-            background: #000000;
-            transition: 0.5s;
-            color: #facf0f;
-        }
-    }
-    /* END OF NAVIGATION BAR */
-    /*BEGINNING OF FIRST HEADER*/
-    
-    .masthead {
-        /* position: relative; */
-        width: 100%;
-        height: 100vh;
-        min-height: 20rem;
-        padding: 5rem 0 10rem 0;
-        background-image: url("../Assets/Images/unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-    }
-    
-    .para {
-        font-style: normal;
-        font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 60px;
-        line-height: 68px;
-        text-align: center;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #fff;
+        width: 100%;
+        height: 100vh;
+        background: #444;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
     }
-    
-    .para-1 {
-        color: #000;
-        margin-left: 18px;
+    .nav-menu.active {
+        left: 0;
     }
-    
-    .para:hover {
-        box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
-        background: #facf0f;
-        color: black;
-        transition: 1s;
+    .nav-menu li {
+        padding: 1rem 0;
     }
-    /* .masthead .explanation {
+    .nav-menu li a {
+        font-size: 2rem;
+    }
+    .hamburger {
+        display: initial;
+    }
+    .hamburger :hover {
+        background: #000000;
+        transition: 0.5s;
+        color: #facf0f;
+    }
+}
+
+
+/* END OF NAVIGATION BAR */
+
+
+/*BEGINNING OF FIRST HEADER*/
+
+.masthead {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    min-height: 20rem;
+    padding: 5rem 0 10rem 0;
+    background-image: url("../Assets/Images/unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.para {
+    font-style: normal;
+    font-weight: bolder;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 60px;
+    line-height: 68px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.para-1 {
+    color: #000;
+    margin-left: 18px;
+}
+
+.para:hover {
+    box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
+    background: #facf0f;
+    color: black;
+    transition: 1s;
+}
+
+
+/* .masthead .explanation {
     max-width: 45rem;
     font-style: normal;
     font-weight: 400;
@@ -140,313 +149,333 @@
     text-align: center;
     color: #f1f1f1;
 } */
-    
-    .masthead h2 {
-        max-width: 50rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 25px;
-        display: flex;
-        color: #000000;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-    }
-    /* BEGINNING OF BUTTON */
-    
-    .button {
-        margin-top: 15px;
-        height: 29%;
-        width: 25%;
-        /* text-align: center; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 35%;
-        background: #facf0f;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .button:hover {
-        box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
-        transition: 0.9s;
-        color: black;
-    }
-    
-    .pro {
-        font-size: 26px;
-        font-style: normal;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: bolder;
-        text-decoration: none;
-        color: black !important;
-    }
-    /* END OF BUTTON */
-    /* END OF FIRST HEADER */
-    /* BEGINNING OF ABOUT ME */
-    
-    .mypics {
-        width: 64%;
-        height: 39%;
-        margin-top: 55px;
-        margin-bottom: 15px;
-        box-shadow: 10px 10px 5px gray;
-    }
-    
-    .about-me {
-        width: 92%;
-        margin: auto;
-        max-width: 110rem;
-        height: 170vh;
-    }
-    
-    .about {
-        text-align: center;
-        font-style: normal;
-        font-weight: bolder;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 3rem;
-        line-height: 32px;
-        color: #000000;
-        margin-top: 9rem;
-    }
-    
-    .about-container {
-        width: 100%;
-        background-image: url("../Assets/Images/about-background.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* background-attachment: scroll; */
-    }
-    
-    .about1 {
-        margin: auto;
-        max-width: 80rem;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 1.6;
-        text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #000000;
-    }
-    
-    .about-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10rem;
-    }
-    
-    .about-details-para {
-        font-size: 1.1rem;
-        color: #000000;
-        /* max-width: 600rem; */
-        line-height: 1.2;
-        margin-bottom: 1rem;
-    }
-    
-    .about-details-para-1 {
-        font-size: 1.1rem;
-        color: #000000;
-        /* max-width: 600rem; */
-        line-height: 1.2;
-        margin-bottom: 1rem;
-    }
-    
-    .about-details-para-2 {
-        font-size: 1.1rem;
-        color: #000000;
-        /* max-width: 600rem; */
-        line-height: 1.2;
-        margin-bottom: 1rem;
-    }
-    
-    .btn-contact {
-        background: #facf0f;
-        color: #000000 !important;
-        padding: 7px 39px;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 17px;
-        font-weight: 650;
-    }
-    
-    .btn-contact:hover {
-        background: lightgray;
-        color: black;
-        transition: 0.9s;
-    }
-    /* SKILLS PART*/
-    
-    .about-skills {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .about-content-title {
-        font-weight: 700;
-        font-size: 30px;
-        margin-top: 2rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        ;
-    }
-    
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .skills-skill {
-        padding: 1rem 2rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        margin-right: 1.5rem;
-        font-size: 1rem;
-        background: rgba(153, 153, 153, .2);
-        border-radius: 5px;
-        font-weight: 600;
-        color: #555;
-    }
-    /* END OF ABOUT ME */
-    /* BEGINNING OF PROJECTS */
-    
-    .main-projects {
-        width: 92%;
-        margin: auto;
-        max-width: 110rem;
-    }
-    
-    .project {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 3rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-align: center;
-        margin-top: 60rem;
-        color: #000;
-    }
-    
-    .project1 {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        max-width: 80rem;
-        font-style: normal;
-        text-align: center;
-        color: #000;
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin: auto;
-        line-height: 1.6;
-    }
-    
-    .project-content {
-        width: 100%;
-        max-width: 200%;
-        margin: 0;
-    }
-    
-    .project-row {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        grid-gap: 3rem;
-        margin-bottom: 10rem;
-        margin-top: 4rem;
-    }
-    
-    .img-content {
-        overflow: hidden;
-    }
-    
-    .row-img {
-        width: 100%;
-        max-width: 200%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    
-    .row-content {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .row-content-1 {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .row-content-2 {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .row-content-3 {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .row-content-title {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-bottom: 1rem;
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
-    
-    .project-p {
-        font-size: 20px;
-        color: #000;
-        max-width: 60rem;
-        line-height: 1.2;
-        margin-bottom: 1rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    .btn-project {
-        background: #facf0f;
-        color: #000000 !important;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding: 7px 39px;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        padding: 1.0rem 4rem;
-        font-size: 18px;
-        font-weight: bolder;
-        margin-top: 13px;
-    }
-    
-    .btn-project:hover {
-        box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
-        transition: 0.9s;
-    }
-    /*END OF PROJECTS*/
-    /*BEGINNING OF CONTACT*/
-    /* .about-container {
+
+.masthead h2 {
+    max-width: 50rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    display: flex;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+/* BEGINNING OF BUTTON */
+
+.button {
+    margin-top: 15px;
+    height: 29%;
+    width: 25%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    background: #facf0f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
+    transition: 0.9s;
+    color: black;
+}
+
+.pro {
+    font-size: 26px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black !important;
+}
+
+
+/* END OF BUTTON */
+
+
+/* END OF FIRST HEADER */
+
+
+/* BEGINNING OF ABOUT ME */
+
+.mypics {
+    width: 64%;
+    height: 39%;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+.about-me {
+    width: 92%;
+    margin: auto;
+    max-width: 110rem;
+    height: 170vh;
+}
+
+.about {
+    text-align: center;
+    font-style: normal;
+    font-weight: bolder;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 3rem;
+    line-height: 32px;
+    color: #000000;
+    margin-top: 9rem;
+}
+
+.about-container {
+    width: 100%;
+    background-image: url("../Assets/Images/about-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+}
+
+.about1 {
+    margin: auto;
+    max-width: 80rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    color: #000000;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.about-details-para {
+    font-size: 1.1rem;
+    color: #000000;
+    /* max-width: 600rem; */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.about-details-para-1 {
+    font-size: 1.1rem;
+    color: #000000;
+    /* max-width: 600rem; */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.about-details-para-2 {
+    font-size: 1.1rem;
+    color: #000000;
+    /* max-width: 600rem; */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.btn-contact {
+    background: #facf0f;
+    color: #000000 !important;
+    padding: 7px 39px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 650;
+}
+
+.btn-contact:hover {
+    background: lightgray;
+    color: black;
+    transition: 0.9s;
+}
+
+
+/* SKILLS PART*/
+
+.about-skills {
+    margin: 0;
+    padding: 0;
+}
+
+.about-content-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 2rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    ;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+/* END OF ABOUT ME */
+
+
+/* BEGINNING OF PROJECTS */
+
+.main-projects {
+    width: 92%;
+    margin: auto;
+    max-width: 110rem;
+}
+
+.project {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 60rem;
+    color: #000;
+}
+
+.project1 {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    max-width: 80rem;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.project-content {
+    width: 100%;
+    max-width: 200%;
+    margin: 0;
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 3rem;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+}
+
+.img-content {
+    overflow: hidden;
+}
+
+.row-img {
+    width: 100%;
+    max-width: 200%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.row-content {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-content-1 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-content-2 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-content-3 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-content-title {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.project-p {
+    font-size: 20px;
+    color: #000;
+    max-width: 60rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.btn-project {
+    background: #facf0f;
+    color: #000000 !important;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    padding: 7px 39px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.0rem 4rem;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 13px;
+}
+
+.btn-project:hover {
+    box-shadow: 0 9px 20px 0 rgb(0 0 0 / 60%);
+    transition: 0.9s;
+}
+
+
+/*END OF PROJECTS*/
+
+
+/*BEGINNING OF CONTACT*/
+
+
+/* .about-container {
     width: 100%;
     background-image: url("../Assets/Images/about-background.jpg");
     background-size: cover;
@@ -454,470 +483,484 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
 } */
-    
-    .contact {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 3rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-align: center;
-        margin-top: 9rem;
-        color: #000;
-    }
-    
-    .contact1 {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        max-width: 80rem;
-        font-style: normal;
-        text-align: center;
-        color: #000;
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin: auto;
-        line-height: 1.6;
-    }
-    /*THE FORM PART BEGINS HERE*/
-    
-    .contact-form-container {
-        box-shadow: 0 3px 10px 0 rgba(41, 41, 41, 0.6);
-        padding: 4rem;
-        max-width: 80rem;
-        text-align: right;
-        width: 100%;
-        height: 67%;
-        border-radius: 5px;
-        margin-top: 29px;
-        background: #fff;
-    }
-    
-    .contact-form {
-        display: block;
-    }
-    
-    .contact-form-field {
-        margin-bottom: 4rem;
-    }
-    
-    .contact-form-label {
-        color: #555;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        font-weight: 700;
-        margin-top: 1rem;
-        display: block;
-        text-align: left;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-style: normal;
-    }
-    
-    .contact-form-input {
-        color: #333;
-        padding: 14px 20px;
-        width: 100%;
-        border: 1px solid #ebebeb;
-        font-size: 1.2rem;
-        background: #f0f0f0;
-        border-radius: 5px;
-        font-weight: 500;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-style: normal;
-    }
-    
-    .btn-submit {
-        background: #facf0f;
-        color: #000000 !important;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        padding: 1.0rem 4rem;
-        font-size: 18px;
-        font-weight: bolder;
-    }
-    
-    .btn-submit:hover {
-        box-shadow: 0 9px 20px 0 rgb(0 0 0 / 26%);
-        transition: 0.9s;
-    }
-    /*THE FORM PART ENDS HERE*/
-    /*THE FOOTER BEGINS HERE*/
-    
-    .main-footer {
-        background: #000;
-        color: #fff;
-    }
-    
-    .upper-footer {
-        width: 100%;
-        padding: 5rem 0;
-        /* flex-direction: column; */
-    }
-    
-    .footer-row-1 {
-        width: 50%;
-        margin-left: 40px;
-        /* max-width: 50rem; */
-        display: block;
-    }
-    
-    .footer-row-1 h2 {
-        font-size: 2.2rem;
-        font-weight: 600;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    .short-p {
-        margin-top: 1rem;
-        color: #ebebeb;
-        font-family: inherit;
-        font-size: 1.2rem;
-        line-height: 1.7;
-    }
-    /* .footer-row-2 {
+
+.contact {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 9rem;
+    color: #000;
+}
+
+.contact1 {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    max-width: 80rem;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/*THE FORM PART BEGINS HERE*/
+
+.contact-form-container {
+    box-shadow: 0 3px 10px 0 rgba(41, 41, 41, 0.6);
+    padding: 4rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 100%;
+    height: 67%;
+    border-radius: 5px;
+    margin-top: 29px;
+    background: #fff;
+}
+
+.contact-form {
+    display: block;
+}
+
+.contact-form-field {
+    margin-bottom: 4rem;
+}
+
+.contact-form-label {
+    color: #555;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 1rem;
+    display: block;
+    text-align: left;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-style: normal;
+}
+
+.contact-form-input {
+    color: #333;
+    padding: 14px 20px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.2rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 500;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-style: normal;
+}
+
+.btn-submit {
+    background: #facf0f;
+    color: #000000 !important;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.0rem 4rem;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 9px 20px 0 rgb(0 0 0 / 26%);
+    transition: 0.9s;
+}
+
+
+/*THE FORM PART ENDS HERE*/
+
+
+/*THE FOOTER BEGINS HERE*/
+
+.main-footer {
+    background: #000;
+    color: #fff;
+}
+
+.upper-footer {
+    width: 100%;
+    padding: 5rem 0;
+    /* flex-direction: column; */
+}
+
+.footer-row-1 {
+    width: 50%;
+    margin-left: 40px;
+    /* max-width: 50rem; */
+    display: block;
+}
+
+.footer-row-1 h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.short-p {
+    margin-top: 1rem;
+    color: #ebebeb;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+
+/* .footer-row-2 {
     width: 200px;
     margin-left: 200px;
 } */
-    
-    .social {
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.social {
+    font-weight: 600;
+    text-transform: uppercase;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.social-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+
+/*THE IMAGES STARTS HERE*/
+
+.linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+}
+
+.twitter {
+    width: 30px;
+    height: 30px;
+}
+
+.website {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*THE IMAGES ENDSS HERE*/
+
+.lower-footer {
+    padding: 1rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.lower-footer a {
+    text-decoration: none;
+    color: #ebebeb;
+    font-weight: 600;
+    margin-left: 3px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.lower-footer a:hover {
+    color: #eee;
+}
+
+@media screen and (max-width:600px) {
+    .button {
+        height: 17%;
+        width: 45%;
+        margin: auto;
+        /* margin-left: 5.5rem; */
     }
-    
-    .social-1 {
+    .about-container {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        gap: 1rem;
     }
-    /*THE IMAGES STARTS HERE*/
-    
-    .linkedin {
-        width: 30px;
-        height: 30px;
+    .mypics {
+        width: 100%;
+        height: 600px
     }
-    
-    .github {
-        width: 30px;
-        height: 30px;
+    .about-me {
+        height: 240vh;
     }
-    
-    .twitter {
-        width: 30px;
-        height: 30px;
+    .about-content {
+        display: block;
     }
-    
-    .website {
-        width: 30px;
-        height: 30px;
+    .about-details-para {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
-    /*THE IMAGES ENDSS HERE*/
-    
-    .lower-footer {
-        padding: 1rem 0;
-        border-top: 1px solid #444;
-        color: #eee;
-        font-size: 1.1rem;
-        text-align: center;
+    .about-details-para-1 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
-    
-    .lower-footer a {
-        text-decoration: none;
-        color: #ebebeb;
-        font-weight: 600;
-        margin-left: 3px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    .about-details-para-2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-bottom: -1rem;
     }
-    
-    .lower-footer a:hover {
-        color: #eee;
+    .about-content-title {
+        margin: auto;
+        font-size: 28px;
     }
-    
-    @media screen and (max-width:600px) {
-        .button {
-            height: 17%;
-            width: 45%;
-            margin: auto;
-            /* margin-left: 5.5rem; */
-        }
-        .about-container {
-            width: 100%;
-        }
-        .mypics {
-            width: 100%;
-            height: 600px
-        }
-        .about-me {
-            height: 240vh;
-        }
-        .about-content {
-            display: block;
-        }
-        .about-details-para {
-            font-size: 15px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about-details-para-1 {
-            font-size: 15px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-bottom: 1rem;
-        }
-        .about-details-para-2 {
-            font-size: 15px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-bottom: -1rem;
-        }
-        .about-content-title {
-            margin: auto;
-            font-size: 28px;
-        }
-        .skills-skill {
-            font-size: 12px;
-        }
-        .btn-contact {
-            margin-top: 5px;
-        }
-        .main-projects {
-            margin-top: 10rem;
-            /* width: 149vw; */
-            height: 400vh;
-        }
-        .project-row {
-            display: block;
-        }
-        .row-content {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-1 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-2 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-3 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .upper-footer {
-            flex-direction: column;
-        }
-        .footer-row-2 {
-            margin-left: 2.5rem;
-        }
+    .skills-skill {
+        font-size: 12px;
     }
-    
-    @media screen and (max-width:320px) {
-        .masthead {
-            width: 150vw;
-            height: 100vh;
-        }
-        .para {
-            margin-bottom: 5px;
-            font-size: 30px;
-        }
-        .para-1 {
-            font-size: 30px;
-        }
-        .masthead h2 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .pro {
-            font-size: 20px;
-        }
-        .mypics {
-            width: 100%;
-            height: 600px
-        }
-        /* .about-me {
+    .btn-contact {
+        margin-top: 5px;
+    }
+    .main-projects {
+        margin-top: 10rem;
+        /* width: 149vw; */
+        height: 400vh;
+    }
+    .project-row {
+        display: block;
+    }
+    .row-content {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-1 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-2 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-3 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .upper-footer {
+        flex-direction: column;
+    }
+    .footer-row-2 {
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .masthead {
+        width: 150vw;
+        height: 100vh;
+    }
+    .para {
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .para-1 {
+        font-size: 30px;
+    }
+    .masthead h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .pro {
+        font-size: 20px;
+    }
+    .mypics {
+        width: 100%;
+        height: 600px
+    }
+    /* .about-me {
             height: 240vh;
         } */
-        .about {
-            font-size: 2.1rem;
-        }
-        .about1 {
-            font-size: 1rem;
-        }
-        .about-details-para {
-            font-size: 16px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about-details-para-1 {
-            font-size: 16px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about-details-para-2 {
-            font-size: 16px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about-details-para-3 {
-            font-size: 16px;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about-me {
-            width: 150vw;
-            height: 300vh;
-        }
-        .about-skills {
-            margin-top: 2rem;
-        }
-        .main-projects {
-            margin-top: 10rem;
-            width: 149vw;
-            height: 450vh;
-        }
-        .project {
-            font-size: 2rem;
-        }
-        .project1 {
-            font-size: 1rem;
-            margin-bottom: 3rem;
-        }
-        .project-row {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-        }
-        .row-content {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-1 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-2 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-3 {
-            margin-top: -40px;
-            align-items: center;
-        }
-        .row-content-title {
-            font-size: 2rem;
-        }
-        .project-p {
-            font-size: 20px;
-            margin-left: 19px;
-        }
-        .main-contact {
-            width: 149vw;
-        }
-        .contact {
-            font-size: 2rem;
-        }
-        .contact1 {
-            font-size: 16px;
-        }
-        .btn-submit {
-            font-size: 15px;
-            margin-bottom: 2rem;
-        }
-        .main-footer {
-            width: 149vw;
-        }
-        .short-p {
-            font-size: 14px;
-        }
+    .about {
+        font-size: 2.1rem;
     }
-    
-    @media screen and (max-width:430px) {
-        .para {
-            margin-bottom: 1px;
-            font-size: 20px;
-        }
-        .para-1 {
-            font-size: 20px;
-        }
-        .masthead h2 {
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-        .about-me {
-            height: 270vh;
-        }
-        .about {
-            font-size: 1.5rem;
-        }
-        .about1 {
-            font-size: 13px;
-        }
-        .btn-contact {
-            margin-top: 15px;
-        }
-        .about-content-title {
-            margin-top: 20px;
-        }
-        .project {
-            font-size: 2rem;
-        }
-        .project1 {
-            font-size: 15px;
-        }
-        .row-content-title {
-            font-size: 2rem;
-        }
-        .project-p {
-            font-size: 15px;
-        }
-        .btn-project {
-            font-size: 15px;
-        }
-        .contact {
-            font-size: 2rem;
-        }
-        .contact1 {
-            font-size: 15px;
-        }
-        .btn-submit {
-            font-size: 15px;
-            margin-bottom: 2rem;
-        }
-        .short-p {
-            font-size: 15px;
-        }
+    .about1 {
+        font-size: 1rem;
     }
-    
-    @media screen and (max-width:730px) {
-        .button {
-            width: 38%;
-            height: 50px;
-        }
-        .pro {
-            font-size: 20px;
-        }
+    .about-details-para {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
-    
-    @media screen and (min-width:730px) {
-        .button {
-            width: 30%;
-            height: 50px;
-        }
+    .about-details-para-1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
-    /*THE FOOTER ENDS HERE*/
+    .about-details-para-2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .about-details-para-3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .about-me {
+        width: 150vw;
+        height: 300vh;
+    }
+    .about-skills {
+        margin-top: 2rem;
+    }
+    .main-projects {
+        margin-top: 10rem;
+        width: 149vw;
+        height: 450vh;
+    }
+    .project {
+        font-size: 2rem;
+    }
+    .project1 {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .row-content {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-1 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-2 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-3 {
+        margin-top: -40px;
+        align-items: center;
+    }
+    .row-content-title {
+        font-size: 2rem;
+    }
+    .project-p {
+        font-size: 20px;
+        margin-left: 19px;
+    }
+    .main-contact {
+        width: 149vw;
+    }
+    .contact {
+        font-size: 2rem;
+    }
+    .contact1 {
+        font-size: 16px;
+    }
+    .btn-submit {
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    .main-footer {
+        width: 149vw;
+    }
+    .short-p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .para {
+        margin-bottom: 1px;
+        font-size: 20px;
+    }
+    .para-1 {
+        font-size: 20px;
+    }
+    .masthead h2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .about-me {
+        height: 270vh;
+    }
+    .about {
+        font-size: 1.5rem;
+    }
+    .about1 {
+        font-size: 13px;
+    }
+    .btn-contact {
+        margin-top: 15px;
+    }
+    .about-content-title {
+        margin-top: 20px;
+    }
+    .project {
+        font-size: 2rem;
+    }
+    .project1 {
+        font-size: 15px;
+    }
+    .row-content-title {
+        font-size: 2rem;
+    }
+    .project-p {
+        font-size: 15px;
+    }
+    .btn-project {
+        font-size: 15px;
+    }
+    .contact {
+        font-size: 2rem;
+    }
+    .contact1 {
+        font-size: 15px;
+    }
+    .btn-submit {
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    .short-p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .button {
+        width: 38%;
+        height: 50px;
+    }
+    .pro {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:730px) {
+    .button {
+        width: 30%;
+        height: 50px;
+    }
+}
+
+
+/*THE FOOTER ENDS HERE*/

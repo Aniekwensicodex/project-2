@@ -33,7 +33,7 @@ const Footer = () => {
                   <a href="https://twitter.com/Chisom86011532">
                     <img src={twitter} alt="twitter" className="twitter" />
                   </a>
-                  <a href="https://wordpress.com/pages/kidknow.wordpress.com">
+                  <a href="https://certifiedcodex.netlify.app/">
                     <img src={website} alt="website" className="website" />
                   </a>
                 </div>
@@ -41,9 +41,7 @@ const Footer = () => {
             </div>
             <div className="lower-footer">
               © Copyright 2023. Made by
-              <a href="https://wordpress.com/pages/kidknow.wordpress.com">
-                Ani Chisom
-              </a>
+              <a href="https://certifiedcodex.netlify.app/">Ani Chisom</a>
             </div>
           </div>
         </div>

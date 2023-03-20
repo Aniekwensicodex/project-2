@@ -2,7 +2,6 @@ import React, {useState} from "react"
 import {Link} from "react-router-dom"
 import {FaBars, FaTimes} from "react-icons/fa"
 import "../Styles/styles.css"
-import "../index.css"
 
 const Navigation = () => {
   const [click, setClick] = useState(false)
