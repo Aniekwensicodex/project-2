@@ -1,7 +1,8 @@
 import React, {useState} from "react"
-import {Link} from "react-router-dom"
+
 import {FaBars, FaTimes} from "react-icons/fa"
 import "../Styles/styles.css"
+import logo from "../Assets/Images/logo.jpg.png"
 
 const Navigation = () => {
   const [click, setClick] = useState(false)
@@ -30,9 +31,9 @@ const Navigation = () => {
     <>
       <nav className={color ? "header header-bg" : "header"}>
         <div className="nav container-fluid px-4 px-lg-5">
-          <Link to="/" className="navbar-brand">
-            Logo
-          </Link>
+          <a href="#home" className="navbar-brand">
+            <img src={logo} alt="logo" className="logo" />
+          </a>
 
           <div className="">
             <ul className={click ? "nav-menu active" : "nav-menu"}>

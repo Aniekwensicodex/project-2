@@ -11,8 +11,7 @@ const Project = () => {
             <h2 className="project">PROJECTS</h2>
             <p className="project1">
               Here you will find some of the personal and clients projects that
-              I have created jedghfrweiag haewhfha jand helped them grow
-              sdjdjvjfn
+              I have created and helped them grow
             </p>
             <div className="project-content">
               <div className="project-row">
