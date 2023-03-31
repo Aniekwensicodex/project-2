@@ -49,9 +49,9 @@ header {
     transition: 0.2s;
 }
 
-.logo {
-    width: 4rem;
-    height: 10%;
+.chisom {
+    width: 3rem;
+    height: 3rem;
 }
 
 .hamburger {
@@ -136,9 +136,9 @@ header {
 .masthead h2 {
     max-width: 50rem;
     font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 26px;
     display: flex;
     color: #000000;
     flex: none;

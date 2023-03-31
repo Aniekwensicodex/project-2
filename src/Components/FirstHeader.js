@@ -9,9 +9,10 @@ const FirstHeader = () => {
             <p className="para">
               HEY, I'M ANIEKWENSI<span className="para-1"> CHISOM</span>
             </p>
-            <h2 className="black-text">
-              A focused Web Developer building the Frontend and of Websites and
-              Web Applications that leads to the success of the overall product
+            <h2>
+              A focused Web Developer building the Front-end and Back-end of
+              Websites and Web Applications that leads to the success of the
+              overall product.
             </h2>
             <div className="button">
               <a href="#Project" className="pro">

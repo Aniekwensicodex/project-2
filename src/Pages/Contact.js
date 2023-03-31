@@ -1,6 +1,46 @@
-import React from "react"
+import React, {useState} from "react"
+import axios from "axios"
 
 const Contact = () => {
+  //HANDLING OF EVENT
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [sent, setSent] = useState(false)
+
+  // FORM SUBMIT
+  const formSubmit = (e) => {
+    e.preventDefault()
+
+    let data = {
+      name: name,
+      email: email,
+      message: message,
+    }
+    axios
+      .post("http://127.0.0.1:3001/api/form", data)
+      .then((res) => {
+        setSent(!false)
+        resetForm()
+        alert("Thank you for contacting me")
+      })
+      .catch(() => {
+        // alert("Message not sent")
+        console.log("Message not sent")
+      })
+  }
+
+  // useEffect(() => {
+  //   formSubmit()
+  // }, [formSubmit])
+
+  // FORM RESET
+  const resetForm = () => {
+    setEmail("")
+    setMessage("")
+    setName("")
+  }
+
   return (
     <>
       <section className="main-contact" id="Contact">
@@ -13,10 +53,10 @@ const Contact = () => {
                 get back to you as soon as possible
               </p>
               <div className="contact-form-container">
-                <form action="#" className="contact-form" method="post">
+                <form onSubmit={formSubmit} className="contact-form">
                   <input type="hidden" name="form-name" value="form 1" />
                   <div className="contact-form-field">
-                    <label className="contact-form-label" for="name">
+                    <label className="contact-form-label" htmlFor="name">
                       Name
                     </label>
                     <input
@@ -25,11 +65,13 @@ const Contact = () => {
                       type="text"
                       className="contact-form-input"
                       name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
 
                   <div className="contact-form-field">
-                    <label className="contact-form-label" for="email">
+                    <label className="contact-form-label" htmlFor="email">
                       Email
                     </label>
                     <input
@@ -38,11 +80,13 @@ const Contact = () => {
                       type="email"
                       className="contact-form-input"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
 
                   <div className="contact-form-field">
-                    <label className="contact-form-label" for="message">
+                    <label className="contact-form-label" htmlFor="message">
                       Message
                     </label>
                     <textarea
@@ -52,6 +96,8 @@ const Contact = () => {
                       placeholder="Enter Your Message"
                       className="contact-form-input"
                       name="message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
                   </div>
                   <button type="submit" className="btn-submit">

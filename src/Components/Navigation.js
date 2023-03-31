@@ -2,7 +2,7 @@ import React, {useState} from "react"
 
 import {FaBars, FaTimes} from "react-icons/fa"
 import "../Styles/styles.css"
-import logo from "../Assets/Images/logo.jpg.png"
+import chisom from "../Assets/Images/chisom.logo.png"
 
 const Navigation = () => {
   const [click, setClick] = useState(false)
@@ -32,7 +32,7 @@ const Navigation = () => {
       <nav className={color ? "header header-bg" : "header"}>
         <div className="nav container-fluid px-4 px-lg-5">
           <a href="#home" className="navbar-brand">
-            <img src={logo} alt="logo" className="logo" />
+            <img src={chisom} alt="chisom" className="chisom" />
           </a>
 
           <div className="">

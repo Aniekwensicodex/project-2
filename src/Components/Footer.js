@@ -14,9 +14,9 @@ const Footer = () => {
               <div className="footer-row-1">
                 <h2>ANI CHISOM</h2>
                 <p className="short-p">
-                  A Frontend focused Web Developer building the Frontend of
-                  Websites and Web Applications that leads to the success of the
-                  overall product
+                  A Frontend focused Web Developer building the Front-end and
+                  Back-end of Websites and Web Applications that leads to the
+                  success of the overall product
                 </p>
               </div>
 
