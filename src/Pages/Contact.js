@@ -18,7 +18,7 @@ const Contact = () => {
       message: message,
     }
     axios
-      .post("http://127.0.0.1:3001/api/form", data)
+      .post("https://chisom.onrender.com/api/form", data)
       .then((res) => {
         setSent(!false)
         resetForm()
